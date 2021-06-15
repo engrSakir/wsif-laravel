@@ -3,8 +3,8 @@
         <!-- Logo container-->
         <div>
             <a class="logo" href="{{ url('/') }}">
-                <img src="images/WSIF-Logo_Green.png" class="l-dark" height="45" alt="">
-                <img src="images/WSIF-Logo_Green.png" class="l-light" height="45" alt="">
+                <img src="images/logo-black.png" class="l-dark" height="45" alt="">
+                <img src="images/logo-white.png" class="l-light" height="45" alt="">
             </a>
         </div>
         <!-- End Logo container-->

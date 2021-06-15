@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
                 <a href="#" class="logo-footer">
-                    <img src="images/WSIF-Logo_Green.png" height="50" alt="">
+                    <img src="images/logo-white.png" height="50" alt="">
                 </a>
                 <p class="mt-4 me-xl-5">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
             </div><!--end col-->
