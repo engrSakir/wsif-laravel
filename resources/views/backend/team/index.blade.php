@@ -1,5 +1,5 @@
 @extends('layouts.backend.app')
-@push('title') | Dashboard @endpush
+@push('title') | Team @endpush
 @push('style')
 
 @endpush
@@ -9,7 +9,7 @@
 
 @section('content')
     <div class="col-xl-9 col-lg-8 col-md-7 mt-4 mt-sm-0">
-        <h5 class="mb-0">Dashboard</h5>
+        <h5 class="mb-0">Team</h5>
         <div class="row">
             <div class="col-12 mt-4 pt-2">
                 <div class="table-responsive shadow rounded">
@@ -36,7 +36,7 @@
                             </td>
                             <td>{{ $team->created_at->format('h:i A d-M-Y') }}</td>
                             <td class="text-end">
-                                <a href="#" class="btn btn-soft-primary"> Edit </a>
+                                <a href="{{ route('team.edit', $team) }}" class="btn btn-soft-primary"> Edit </a>
                                 <button class="btn btn-soft-danger delete-btn" value="{{ route('team.destroy', $team) }}"> Delete </button>
                             </td>
                         </tr>

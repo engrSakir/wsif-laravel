@@ -61,7 +61,7 @@ class TeamController extends Controller
      */
     public function edit(Team $team)
     {
-        //
+        return view('backend.team.edit', compact('team'));
     }
 
     /**
@@ -73,7 +73,38 @@ class TeamController extends Controller
      */
     public function update(Request $request, Team $team)
     {
-        //
+        $request->validate([
+           'name' => 'required|unique:teams,name,'.$team->id,
+           'image' => 'nullable|image',
+           'linkedin' => 'nullable|string',
+           'designation' => 'nullable|string|max:200',
+           'description' => 'nullable|string|max:5000',
+           'status' => 'nullable|boolean',
+        ]);
+
+        $team->name = $request->name;
+        $team->linkedin = $request->linkedin;
+        $team->designation = $request->designation;
+        $team->description = $request->description;
+        $team->active = $request->status ?? false;
+
+        if($request->hasFile('image')){
+            $image             = $request->file('image');
+            $folder_path       = 'uploads/images/';
+            if (!file_exists($folder_path)) {
+                mkdir($folder_path, 0777, true);
+            }
+            $image_new_name    = Str::random(20).'-'.now()->timestamp.'.'.$image->getClientOriginalExtension();
+            //resize and save to server
+            Image::make($image->getRealPath())->save($folder_path.$image_new_name);
+            $team->image = $folder_path.$image_new_name;
+        }
+        try {
+            $team->save();
+            return back()->withToastSuccess('Successfully updated');
+        }catch(\Exception $exception){
+            return back()->withErrors($exception->getMessage());
+        }
     }
 
     /**
