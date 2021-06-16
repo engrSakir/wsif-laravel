@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--  Essential META Tags -->
-    <meta content="author" name="{{ config('app.name') }}">
-    <meta content="keywords" name="keyword1, keyword2, keyword3, keyword4">
-    <meta property="og:title" content="{{ config('app.name') }}">
-    <meta property="og:description" content="World Social Innovation Forum (WSIF) is a global platform of social changemakers, social innovators, impact investors, policymakers and thought leaders in government, non-profit, and corporate sectors.">
-    <meta property="og:image" content="{{ asset('images/meta/main-meta.png') }}">
+    <meta content="author" name="{{ get_static_option('meta_author') ?? config('app.name') }}">
+    <meta content="keywords" name="{{ get_static_option('meta_keywords') ?? config('app.name') }}">
+    <meta property="og:title" content="{{ get_static_option('meta_title') ?? config('app.name') }}">
+    <meta property="og:description" content="{{ get_static_option('meta_description') ?? config('app.name') }}">
+    <meta property="og:image" content="{{ asset(get_static_option('meta_image') ?? 'images/meta/main-meta.png') }}">
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:type" content="website"/>
     <!-- Favicon -->
@@ -21,7 +21,6 @@
     <!-- Icons -->
     <link href="{{ asset('css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/remixicon.css') }}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v3.0.6/css/line.css">
     <!-- SLIDER -->
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}"/>
     <!-- Css -->
