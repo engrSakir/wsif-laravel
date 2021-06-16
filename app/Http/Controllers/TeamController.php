@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class TeamController extends Controller
 {
@@ -81,6 +84,19 @@ class TeamController extends Controller
      */
     public function destroy(Team $team)
     {
-        //
+        try {
+            if ($team->image != null)
+                File::delete(public_path($team->image)); //Old image delete
+            $team->delete();
+            return response()->json([
+                'type' => 'success',
+                'message' => ''
+            ]);
+        }catch (\Exception$exception){
+            return response()->json([
+                'type' => 'error',
+                'message' => ''
+            ]);
+        }
     }
 }
