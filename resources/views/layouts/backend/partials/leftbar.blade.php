@@ -4,7 +4,7 @@
             <img src="images/bg/banner.jpg" class="img-fluid" alt="">
         </div>
         <div class="text-center avatar-profile margin-nagative mt-n5 position-relative pb-4 border-bottom">
-            <img src="images/doctors/01.jpg" class="rounded-circle shadow-md avatar avatar-md-md" alt="">
+            <img src="images/user.png" class="rounded-circle shadow-md avatar avatar-md-md" alt="">
             <h5 class="mt-3 mb-1">{{ auth()->user()->name }}</h5>
             <p class="text-muted mb-0">{{ auth()->user()->email }}</p>
         </div>
