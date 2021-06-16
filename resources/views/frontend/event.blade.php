@@ -48,7 +48,7 @@
                             <img src="images/logo-black.png" class="img-fluid" alt="">
                         </div>
                         <div class="row mt-3 mb-3">
-                            <div class="col text-center text-white" style="background-color: rgb(150, 187, 124);">
+                            <div class="col text-center text-white bg-primary">
                                 05 - 06 AUGUST 2021
                             </div>
                         </div>
