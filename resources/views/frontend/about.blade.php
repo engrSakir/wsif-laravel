@@ -31,7 +31,7 @@
     <!-- Home content -->
     <section class="section bg-white">
         <div class="container" style="margin-top: -50px;">
-           World Social Innovation Forum (WSIF) is a global platform of social changemakers, social innovators, impact investors, policymakers and thought leaders in government, non-profit, and corporate sectors. It is headquartered in Silicon Valley and it aims to improve the lives of people and build stronger, healthier communities across the globe. Our approach provides a unique combination of educating, engaging, and connecting leaders in areas like impact investment, digital women entrepreneurship, digital healthcare, digital education, and smart city/village initiatives.
+           {!! get_static_option('about_description') !!}
         </div>
     </section>
     <!-- /Home content -->

@@ -12,6 +12,9 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin/', 'as' => ''], funct
     Route::get('home', [\App\Http\Controllers\StaticOptionController::class, 'getHomeInfo'])->name('home.edit');
     Route::post('home', [\App\Http\Controllers\StaticOptionController::class, 'updateHomeInfo'])->name('home.update');
 
+    Route::get('about', [\App\Http\Controllers\StaticOptionController::class, 'getAboutInfo'])->name('about.edit');
+    Route::post('about', [\App\Http\Controllers\StaticOptionController::class, 'updateAboutInfo'])->name('about.update');
+
     Route::get('basic-info', [\App\Http\Controllers\StaticOptionController::class, 'getBasicInfo'])->name('basic.edit');
     Route::post('basic-info', [\App\Http\Controllers\StaticOptionController::class, 'updateBasicInfo'])->name('basic.update');
 

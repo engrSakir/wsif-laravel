@@ -22,6 +22,8 @@ class StaticOptionSeeder extends Seeder
         set_static_option('home_banner_title','World Social Innovation Forum');
         set_static_option('home_banner_description','World Social Innovation Forum (WSIF) is a global platform of social changemakers, social innovators, impact investors, policymakers and thought leaders in government, non-profit, and corporate sectors. It is headquartered in Silicon Valley and it aims to improve the lives of people and build stronger, healthier communities across the globe. Our approach provides a unique combination of educating, engaging, and connecting leaders in areas like impact investment, digital women entrepreneurship, digital healthcare, digital education, and smart city/village initiatives.');
 
+        set_static_option('about_description','World Social Innovation Forum (WSIF) is a global platform of social changemakers, social innovators, impact investors, policymakers and thought leaders in government, non-profit, and corporate sectors. It is headquartered in Silicon Valley and it aims to improve the lives of people and build stronger, healthier communities across the globe. Our approach provides a unique combination of educating, engaging, and connecting leaders in areas like impact investment, digital women entrepreneurship, digital healthcare, digital education, and smart city/village initiatives.');
+
         set_static_option('facebook', null);
         set_static_option('instagram', null);
         set_static_option('twitter', null);

@@ -27,6 +27,22 @@ class StaticOptionController extends Controller
         }
     }
 
+    public function getAboutInfo(){
+        return view('backend.static-option.about');
+    }
+
+    public function updateAboutInfo(Request $request){
+        $request->validate([
+           'description' => 'required|string',
+        ]);
+        try {
+           update_static_option('about_description', $request->description);
+            return back()->withToastSuccess('Successfully about info updated');
+        }catch(\Exception $exception){
+            return back()->withErrors($exception->getMessage());
+        }
+    }
+
     public function getBasicInfo(){
         return view('backend.static-option.basic');
     }
