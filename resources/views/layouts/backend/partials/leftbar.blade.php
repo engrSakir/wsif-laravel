@@ -16,6 +16,7 @@
                 <li class="navbar-item"><a href="{{ route('page.edit', $page) }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> {{ $page->name }}</a></li>
                 <li class="navbar-item"><a href="{{ route('page.show', $page) }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Details of {{ $page->name }}</a></li>
             @endforeach
+            <li class="navbar-item"><a href="{{ route('basic.edit') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Basic Information Management</a></li>
         </ul>
     </div>
 </div><!--end col-->

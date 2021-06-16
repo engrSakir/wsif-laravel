@@ -6,7 +6,7 @@
                     <img src="images/logo-white.png" height="50" alt="">
                 </a>
                 <p class="mt-4 me-xl-5">
-                    The World Social Innovation Forum brings together social changemakers, social innovators, impact investors, leaders in the government, non-profit, and corporate sector, policymakers and thought leaders from various regions of the world.
+                    {!! get_static_option('footer_note') !!}
                 </p>
             </div><!--end col-->
 
@@ -15,25 +15,32 @@
                     <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Company</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="#l" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About us</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Services</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Team</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Project</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
+                            <li><a href="{{ route('about') }}" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> ABOUT</a></li>
+                            <li><a href="{{ route('team') }}" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> TEAM</a></li>
+
+                            @foreach(pages() as $page)
+                                <li><a href="{{ route('page', $page->slug) }}" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> {{ $page->name }}</a></li>
+                            @endforeach
+                            <li><a href="{{ route('news') }}" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> NEWS</a></li>
+                            <li><a href="{{ route('contact') }}" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> CONTACT</a></li>
                         </ul>
                     </div><!--end col-->
 
                     <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h5 class="text-light footer-head">Departments</h5>
+                        <h5 class="text-light footer-head">Our Office</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Eye Care</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Psychotherapy</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Dental Care</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Orthopedic</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Cardiology</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Gynecology</a></li>
-                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Neurology</a></li>
+                            <li>
+                                <b>{{ get_static_option('office_name_one') }}</b> <br>
+                                {{ get_static_option('office_address_one') }}
+                            </li>
+                            <li>
+                                <b>{{ get_static_option('office_name_two') }}</b> <br>
+                                {{ get_static_option('office_address_two') }}
+                            </li>
+                            <li>
+                                <b>{{ get_static_option('office_name_three') }}</b> <br>
+                                {{ get_static_option('office_address_three') }}
+                            </li>
                         </ul>
                     </div><!--end col-->
 
@@ -42,25 +49,16 @@
                         <ul class="list-unstyled footer-list mt-4">
                             <li class="d-flex align-items-center">
                                 <i data-feather="mail" class="fea icon-sm text-foot align-middle"></i>
-                                <a href="mailto:contact@example.com" class="text-foot ms-2">contact@example.com</a>
-                            </li>
-
-                            <li class="d-flex align-items-center">
-                                <i data-feather="phone" class="fea icon-sm text-foot align-middle"></i>
-                                <a href="tel:+152534-468-854" class="text-foot ms-2">+152 534-468-854</a>
-                            </li>
-
-                            <li class="d-flex align-items-center">
-                                <i data-feather="map-pin" class="fea icon-sm text-foot align-middle"></i>
-                                <a href="../../../www.google.com/maps/embed0f5f.html?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-foot ms-2">View on Google map</a>
+                                <a href="mailto:contact@example.com" class="text-foot ms-2">{{ get_static_option('email') }}</a>
                             </li>
                         </ul>
 
                         <ul class="list-unstyled social-icon footer-social mb-0 mt-4">
-                            <li class="list-inline-item"><a href="#" class="rounded-pill"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="rounded-pill"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="rounded-pill"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="rounded-pill"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="{{ get_static_option('facebook') }}" target="_blank" class="rounded-pill"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="{{ get_static_option('instagram') }}" target="_blank" class="rounded-pill"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <br>
+                            <li class="list-inline-item"><a href="{{ get_static_option('twitter') }}" target="_blank" class="rounded-pill"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="{{ get_static_option('linkedin') }}" target="_blank" class="rounded-pill"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
                         </ul><!--end icon-->
                     </div><!--end col-->
                 </div><!--end row-->
@@ -73,16 +71,14 @@
             <div class="row align-items-center">
                 <div class="col-sm-6">
                     <div class="text-sm-start text-center">
-                        <p class="mb-0"> All right reserved by {{ config('app.name') }}</p>
+                        <p class="mb-0"> {!! get_static_option('footer_credit') !!}</p>
                     </div>
                 </div><!--end col-->
 
                 <div class="col-sm-6 mt-4 mt-sm-0">
                     <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-foot me-2">Terms</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-foot me-2">Privacy</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-foot me-2">About</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-foot me-2">Contact</a></li>
+                        <li class="list-inline-item"><a href="{{ route('about') }}" class="text-foot me-2">About</a></li>
+                        <li class="list-inline-item"><a href="{{ route('contact') }}" class="text-foot me-2">Contact</a></li>
                     </ul>
                 </div><!--end col-->
             </div><!--end row-->

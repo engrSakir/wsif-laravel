@@ -28,9 +28,12 @@ class StaticOptionSeeder extends Seeder
         set_static_option('linkedin', null);
 
         set_static_option('email', null);
-        set_static_option('office_info_one', null);
-        set_static_option('office_info_teo', null);
-        set_static_option('office_info_three', null);
+        set_static_option('office_name_one', null);
+        set_static_option('office_address_one', null);
+        set_static_option('office_name_two', null);
+        set_static_option('office_address_two', null);
+        set_static_option('office_name_three', null);
+        set_static_option('office_address_three', null);
 
         set_static_option('footer_note','The World Social Innovation Forum brings together social changemakers, social innovators, impact investors, leaders in the government, non-profit, and corporate sector, policymakers and thought leaders from various regions of the world.');
         set_static_option('footer_credit','All right reserved by WSIF');
