@@ -48,7 +48,7 @@ class PageController extends Controller
      */
     public function show(Page $page)
     {
-        //
+        return view('backend.page.show', compact('page'));
     }
 
     /**
@@ -59,7 +59,7 @@ class PageController extends Controller
      */
     public function edit(Page $page)
     {
-        return view('backend.page.index', compact('page'));
+        return view('backend.page.edit', compact('page'));
     }
 
     /**

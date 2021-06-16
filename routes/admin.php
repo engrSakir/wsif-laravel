@@ -11,6 +11,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin/', 'as' => ''], funct
 
     Route::resource('team', \App\Http\Controllers\TeamController::class);
     Route::resource('page', \App\Http\Controllers\PageController::class);
+    Route::resource('pageItem', \App\Http\Controllers\PageItemController::class);
 });
 
 
