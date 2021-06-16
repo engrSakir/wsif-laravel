@@ -3,27 +3,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <!-- Page Title -->
     <title>{{ config('app.name') }} @stack('title')</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
-    <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
-    <meta name="author" content="Shreethemes" />
-    <meta name="email" content="shreethemes@gmail.com" />
-    <meta name="website" content="../../../www.shreethemes.in/index.html" />
-    <meta name="Version" content="v1.0.0" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!--  Essential META Tags -->
+    <meta content="author" name="{{ config('app.name') }}">
+    <meta content="keywords" name="keyword1, keyword2, keyword3, keyword4">
+    <meta property="og:title" content="{{ config('app.name') }}">
+    <meta property="og:description" content="World Social Innovation Forum (WSIF) is a global platform of social changemakers, social innovators, impact investors, policymakers and thought leaders in government, non-profit, and corporate sectors.">
+    <meta property="og:image" content="{{ asset('images/meta/main-meta.png') }}">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:type" content="website"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo-icon.png') }}">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Icons -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/remixicon.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/remixicon.css') }}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v3.0.6/css/line.css">
     <!-- SLIDER -->
-    <link rel="stylesheet" href="css/tiny-slider.css"/>
+    <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}"/>
     <!-- Css -->
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/style.min.css') }}" rel="stylesheet" type="text/css" />
     @stack('style')
 </head>
 
@@ -69,16 +71,16 @@
 <!-- MOdal End -->
 
 <!-- javascript -->
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- SLIDER -->
-<script src="js/tiny-slider.js"></script>
-<script src="js/tiny-slider-init.js"></script>
+<script src="{{ asset('js/tiny-slider.js') }}"></script>
+<script src="{{ asset('js/tiny-slider-init.js') }}"></script>
 <!-- Counter -->
-<script src="js/counter.init.js"></script>
+<script src="{{ asset('js/counter.init.js') }}"></script>
 <!-- Icons -->
-<script src="js/feather.min.js"></script>
+<script src="{{ asset('js/feather.min.js') }}"></script>
 <!-- Main Js -->
-<script src="js/app.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 @stack('script')
 </body>
 </html>
