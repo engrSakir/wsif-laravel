@@ -29,9 +29,9 @@ Route::get('/event', function () {
     return view('frontend.event');
 })->name('event');
 
-Route::get('/initiatives-and-Platforms', function () {
-    return view('frontend.initiatives-and-Platforms');
-})->name('initiatives-and-Platforms');
+Route::get('/initiatives-and-platforms', function () {
+    return view('frontend.initiatives-and-platforms');
+})->name('initiatives-and-platforms');
 
 Route::get('/news', function () {
     return view('frontend.news');

@@ -29,7 +29,7 @@
                 <li><a href="{{ route('about') }}" class="sub-menu-item">ABOUT</a></li>
                 <li><a href="{{ route('team') }}" class="sub-menu-item">TEAM</a></li>
                 <li><a href="{{ route('event') }}" class="sub-menu-item">EVENTS</a></li>
-                <li><a href="{{ route('initiatives-and-Platforms') }}" class="sub-menu-item">Initiatives & Platforms</a></li>
+                <li><a href="{{ route('initiatives-and-platforms') }}" class="sub-menu-item">Initiatives & Platforms</a></li>
                 <li><a href="{{ route('news') }}" class="sub-menu-item">NEWS</a></li>
                 <li><a href="{{ route('contact') }}" class="sub-menu-item">CONTACT</a></li>
             </ul><!--end navigation menu-->
