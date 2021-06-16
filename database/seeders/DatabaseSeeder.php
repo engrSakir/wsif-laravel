@@ -18,5 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PageSeeder::class);
         $this->call(PageItemSeeder::class);
         $this->call(TeamSeeder::class);
+        $this->call(PartnerSeeder::class);
+        $this->call(StaticOptionSeeder::class);
     }
 }

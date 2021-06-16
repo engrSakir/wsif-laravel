@@ -38,7 +38,7 @@
                         <div class="col-md-6">
                             <div class="heading-title">
                                 <h4 class="display-4 fw-bold text-white mt-3 mb-4">
-                                    World Social Innovation Forum
+                                    {{ get_static_option('home_banner_title') }}
                                 </h4>
                             </div>
                         </div>
@@ -48,13 +48,7 @@
                         <div class="col-md-6">
                             <div class="heading-title">
                                 <p class="para-desc text-white-50 mb-0">
-                                    World Social Innovation Forum (WSIF) is a global platform of social changemakers,
-                                    social innovators, impact investors, policymakers and thought leaders in government,
-                                    non-profit, and corporate sectors. It is headquartered in Silicon Valley and it aims
-                                    to improve the lives of people and build stronger, healthier communities across the
-                                    globe. Our approach provides a unique combination of educating, engaging, and
-                                    connecting leaders in areas like impact investment, digital women entrepreneurship,
-                                    digital healthcare, digital education, and smart city/village initiatives.
+                                    {!! get_static_option('home_banner_description') !!}
                                 </p>
                             </div>
                         </div>
@@ -129,7 +123,7 @@
                         <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                             <div class="section-title ms-lg-5">
                                 <div class="position-relative">
-                                    <img src="images/home/one-image.png" class="img-fluid" alt="">
+                                    <img src="{{ asset($item->image) }}" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div><!--end col-->
@@ -138,7 +132,7 @@
                     <div class="row align-items-center desktopContent">
                         <div class="col-lg-5 col-md-6">
                             <div class="position-relative">
-                                <img src="images/home/two-image.png" class="img-fluid" alt="">
+                                <img src="{{ asset($item->image) }}" class="img-fluid" alt="">
                             </div>
                         </div><!--end col-->
                         <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
@@ -197,31 +191,17 @@
         <div class="row">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h4 class="title mb-4">Valuable products</h4>
+                    @if($partners->count() > 0)<h4 class="title mb-4">Valuable products</h4> @endif
                 </div>
             </div><!--end col-->
         </div><!--end row-->
         <div class="container">
             <div class="row justify-content-center">
+                @foreach($partners as $partner)
                 <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img width="120" height="120" src="images/partners/1.png" class="avatar" alt="">
+                    <img width="120" height="120" src="{{ asset($partner->image) }}" class="avatar" alt="">
                 </div><!--end col-->
-
-                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img width="120" height="120" src="images/partners/2.png" class="avatar" alt="">
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img width="120" height="120" src="images/partners/3.png" class="avatar" alt="">
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img width="120" height="120" src="images/partners/4.png" class="avatar" alt="">
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img width="120" height="120" src="images/partners/5.png" class="avatar" alt="">
-                </div><!--end col-->
+                @endforeach
             </div><!--end row-->
         </div><!--end container-->
     </section>

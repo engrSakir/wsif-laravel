@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $items = \App\Models\PageItem::where('active', true)->where('show_on_home', true)->orderBy('id', 'desc')->get();
-    return view('frontend.home', compact('items'));
+    $partners = \App\Models\Partner::all();
+    return view('frontend.home', compact('items', 'partners'));
 })->name('home');
 
 Route::get('/page/{slug}', function ($slug) {
