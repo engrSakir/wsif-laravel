@@ -74,7 +74,7 @@ class TeamController extends Controller
     public function update(Request $request, Team $team)
     {
         $request->validate([
-           'name' => 'required|unique:teams,name,'.$team->id,
+           'name' => 'required|string|unique:teams,name,'.$team->id,
            'image' => 'nullable|image',
            'linkedin' => 'nullable|string',
            'designation' => 'nullable|string|max:200',
@@ -82,6 +82,7 @@ class TeamController extends Controller
            'status' => 'nullable|boolean',
         ]);
 
+        $team->slug = Str::slug($request->name, '-');
         $team->name = $request->name;
         $team->linkedin = $request->linkedin;
         $team->designation = $request->designation;

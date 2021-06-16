@@ -47,7 +47,7 @@
             <div class="col-12 mt-4">
                 <div class="card component-wrapper border-0 rounded shadow">
                     <div class="p-4 border-bottom">
-                        <h5 class="mb-0"> Forms </h5>
+                        <h5 class="mb-0"> Edit for: {{ $team->name }} </h5>
                     </div>
 
                     <div class="p-4">

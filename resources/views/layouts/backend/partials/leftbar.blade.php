@@ -12,7 +12,7 @@
             <li class="navbar-item"><a href="{{ route('dashboard') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Dashboard</a></li>
             <li class="navbar-item"><a href="{{ route('team.index') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Team</a></li>
             @foreach(pages() as $page)
-                <li class="navbar-item"><a href="{{ route('admin.page', $page->slug) }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> {{ $page->name }}</a></li>
+                <li class="navbar-item"><a href="{{ route('page.edit', $page) }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> {{ $page->name }}</a></li>
             @endforeach
         </ul>
     </div>

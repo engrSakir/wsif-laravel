@@ -9,15 +9,8 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin/', 'as' => ''], funct
     })->middleware(['auth'])->name('dashboard');
 
 
-    Route::get('/manage-page/{slug}', function ($slug) {
-        $page = \App\Models\Page::where('slug', $slug)->first();
-        if(!$page){
-            return back();
-        }
-        return view('backend.page.index', compact('page'));
-    })->name('admin.page');
-
     Route::resource('team', \App\Http\Controllers\TeamController::class);
+    Route::resource('page', \App\Http\Controllers\PageController::class);
 });
 
 
