@@ -15,25 +15,25 @@
                     <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Company</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="aboutus.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About us</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Services</a></li>
-                            <li><a href="doctor-team-two.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Team</a></li>
-                            <li><a href="blog-detail.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Project</a></li>
-                            <li><a href="blogs.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog</a></li>
-                            <li><a href="login.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
+                            <li><a href="#l" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About us</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Services</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Team</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Project</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
                         </ul>
                     </div><!--end col-->
 
                     <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">Departments</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Eye Care</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Psychotherapy</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Dental Care</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Orthopedic</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Cardiology</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Gynecology</a></li>
-                            <li><a href="departments.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Neurology</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Eye Care</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Psychotherapy</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Dental Care</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Orthopedic</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Cardiology</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Gynecology</a></li>
+                            <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Neurology</a></li>
                         </ul>
                     </div><!--end col-->
 
@@ -79,10 +79,10 @@
 
                 <div class="col-sm-6 mt-4 mt-sm-0">
                     <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
-                        <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
-                        <li class="list-inline-item"><a href="privacy.html" class="text-foot me-2">Privacy</a></li>
-                        <li class="list-inline-item"><a href="aboutus.html" class="text-foot me-2">About</a></li>
-                        <li class="list-inline-item"><a href="contact.html" class="text-foot me-2">Contact</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-foot me-2">Terms</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-foot me-2">Privacy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-foot me-2">About</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-foot me-2">Contact</a></li>
                     </ul>
                 </div><!--end col-->
             </div><!--end row-->

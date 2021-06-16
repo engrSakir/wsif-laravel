@@ -49,6 +49,14 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        if($request->ajax()){
+            return response()->json([
+                'type' => 'success',
+                'message' => 'Successfully logged out from '. config('app.name'),
+                'url' => route('login'),
+            ]);
+        }else{
+            return redirect('/');
+        }
     }
 }

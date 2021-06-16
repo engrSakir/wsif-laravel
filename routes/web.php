@@ -19,12 +19,14 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/page/{slug}', function ($slug) {
-    $page = \App\Models\Page::where('slug', $slug)->first();
+    $page = \App\Models\Page::where('slug', $slug)->where('active', true)->first();
         if(!$page){
             return back();
         }
     return view('frontend.page', compact('page'));
 })->name('page');
+
+
 
 Route::get('/about', function () {
     return view('frontend.about');
@@ -51,10 +53,5 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
 
-
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
