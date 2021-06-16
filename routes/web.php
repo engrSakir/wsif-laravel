@@ -14,8 +14,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
-});
+    return view('frontend.home');
+})->name('home');
+
+Route::get('/about', function () {
+    return view('frontend.about');
+})->name('about');
+
+Route::get('/team', function () {
+    return view('frontend.team');
+})->name('team');
+
+Route::get('/event', function () {
+    return view('frontend.event');
+})->name('event');
+
+Route::get('/initiatives-and-Platforms', function () {
+    return view('frontend.initiatives-and-Platforms');
+})->name('initiatives-and-Platforms');
+
+Route::get('/news', function () {
+    return view('frontend.news');
+})->name('news');
+
+Route::get('/contact', function () {
+    return view('frontend.contact');
+})->name('contact');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

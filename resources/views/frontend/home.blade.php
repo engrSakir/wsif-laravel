@@ -244,30 +244,33 @@
     <!-- /News -->
     <!-- Partners -->
     <section class="py-4 bg-light">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title mb-4">Valuable products</h4>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img src="images/client/amazon.svg" class="avatar avatar-client" alt="">
+                    <img width="120" height="120" src="images/partners/1.png" class="avatar" alt="">
                 </div><!--end col-->
 
                 <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img src="images/client/google.svg" class="avatar avatar-client" alt="">
+                    <img width="120" height="120" src="images/partners/2.png" class="avatar" alt="">
                 </div><!--end col-->
 
                 <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img src="images/client/lenovo.svg" class="avatar avatar-client" alt="">
+                    <img width="120" height="120" src="images/partners/3.png" class="avatar" alt="">
                 </div><!--end col-->
 
                 <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img src="images/client/paypal.svg" class="avatar avatar-client" alt="">
+                    <img width="120" height="120" src="images/partners/4.png" class="avatar" alt="">
                 </div><!--end col-->
 
                 <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img src="images/client/shopify.svg" class="avatar avatar-client" alt="">
-                </div><!--end col-->
-
-                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                    <img src="images/client/spotify.svg" class="avatar avatar-client" alt="">
+                    <img width="120" height="120" src="images/partners/5.png" class="avatar" alt="">
                 </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->

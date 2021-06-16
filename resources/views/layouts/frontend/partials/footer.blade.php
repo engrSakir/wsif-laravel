@@ -5,7 +5,9 @@
                 <a href="#" class="logo-footer">
                     <img src="images/logo-white.png" height="50" alt="">
                 </a>
-                <p class="mt-4 me-xl-5">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
+                <p class="mt-4 me-xl-5">
+                    The World Social Innovation Forum brings together social changemakers, social innovators, impact investors, leaders in the government, non-profit, and corporate sector, policymakers and thought leaders from various regions of the world.
+                </p>
             </div><!--end col-->
 
             <div class="col-xl-7 col-lg-8 col-md-12">
