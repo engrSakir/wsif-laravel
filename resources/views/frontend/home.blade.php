@@ -168,80 +168,38 @@
     <!-- /Home content -->
     <!-- News -->
     <section class="section">
-        <div class="container mt-100 mt-60">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <span class="badge badge-pill badge-soft-primary mb-3">Read News</span>
-                        <h4 class="title mb-4">Latest News &amp; Blogs</h4>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
+        <div class="container mt-60">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 d-flex align-items-stretch">
                     <div class="card blog blog-primary border-0 shadow rounded overflow-hidden">
-                        <img src="images/blog/01.jpg" class="img-fluid" alt="">
+                        <img src="images/news/1.jpg" class="img-fluid" alt="">
                         <div class="card-body p-4">
                             <ul class="list-unstyled mb-2">
-                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>20th November, 2020</li>
-                                <li class="list-inline-item text-muted small"><i class="uil uil-clock text-dark h6 me-1"></i>5 min read</li>
+                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>09th May</li>
                             </ul>
-                            <a href="blog-detail.html" class="text-dark title h5">You can easily connect to doctor and make a treatment</a>
-                            <div class="post-meta d-flex justify-content-between mt-3">
-                                <ul class="list-unstyled mb-0">
-                                    <li class="list-inline-item me-2 mb-0"><a href="#" class="text-muted like"><i class="mdi mdi-heart-outline me-1"></i>33</a></li>
-                                    <li class="list-inline-item"><a href="#" class="text-muted comments"><i class="mdi mdi-comment-outline me-1"></i>08</a></li>
-                                </ul>
-                                <a href="blog-detail.html" class="link">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
+                            <a href="#" class="text-dark title h5">
+                                WSIF Partners with Startup World Cup and Startup Hub Nepal to Support Impact Startups Aligning with SDGs
+                            </a>
                         </div>
                     </div>
                 </div><!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 d-flex align-items-stretch">
                     <div class="card blog blog-primary border-0 shadow rounded overflow-hidden">
-                        <img src="images/blog/02.jpg" class="img-fluid" alt="">
+                        <img src="images/news/2.jpg" class="img-fluid" alt="">
                         <div class="card-body p-4">
                             <ul class="list-unstyled mb-2">
-                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>20th November, 2020</li>
-                                <li class="list-inline-item text-muted small"><i class="uil uil-clock text-dark h6 me-1"></i>5 min read</li>
+                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>10th April</li>
                             </ul>
-                            <a href="blog-detail.html" class="text-dark title h5">Lockdowns lead to fewer people seeking medical care</a>
-                            <div class="post-meta d-flex justify-content-between mt-3">
-                                <ul class="list-unstyled mb-0">
-                                    <li class="list-inline-item me-2 mb-0"><a href="#" class="text-muted like"><i class="mdi mdi-heart-outline me-1"></i>33</a></li>
-                                    <li class="list-inline-item"><a href="#" class="text-muted comments"><i class="mdi mdi-comment-outline me-1"></i>08</a></li>
-                                </ul>
-                                <a href="blog-detail.html" class="link">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="card blog blog-primary border-0 shadow rounded overflow-hidden">
-                        <img src="images/blog/03.jpg" class="img-fluid" alt="">
-                        <div class="card-body p-4">
-                            <ul class="list-unstyled mb-2">
-                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>20th November, 2020</li>
-                                <li class="list-inline-item text-muted small"><i class="uil uil-clock text-dark h6 me-1"></i>5 min read</li>
-                            </ul>
-                            <a href="blog-detail.html" class="text-dark title h5">Emergency medicine research course for the doctors</a>
-                            <div class="post-meta d-flex justify-content-between mt-3">
-                                <ul class="list-unstyled mb-0">
-                                    <li class="list-inline-item me-2 mb-0"><a href="#" class="text-muted like"><i class="mdi mdi-heart-outline me-1"></i>33</a></li>
-                                    <li class="list-inline-item"><a href="#" class="text-muted comments"><i class="mdi mdi-comment-outline me-1"></i>08</a></li>
-                                </ul>
-                                <a href="blog-detail.html" class="link">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
+                            <a href="#" class="text-dark title h5">
+                                WSIF Partners with Bangladesh’s ICT Division to Launch Plasma Network
+                            </a>
                         </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->
     </section>
-    <!-- /News -->
+    <!-- /News -->>
     <!-- Partners -->
     <section class="py-4 bg-light">
         <div class="row">

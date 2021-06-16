@@ -9,7 +9,7 @@
 
 @section('content')
     <!-- Hero -->
-    <section class="bg-half-170 d-table w-100" style="background: url('images/bg/about.jpg') center center;">
+    <section class="bg-half-170 d-table w-100" style="background: url('images/bg/banner.jpg') center;">
         <div class="bg-overlay"></div>
         <div class="container">
             <div class="row justify-content-center">

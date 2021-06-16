@@ -9,7 +9,7 @@
 
 @section('content')
     <!-- Hero -->
-    <section class="bg-half-170 d-table w-100" style="background: url('images/bg/about.jpg') center center;">
+    <section class="bg-half-170 d-table w-100" style="background: url('images/bg/banner.jpg') center;">
         <div class="bg-overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -31,16 +31,6 @@
     <!-- Home content -->
     <section class="section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center mb-4 pb-2">
-                        <span class="badge badge-pill badge-soft-primary">Upcoming Events</span>
-                        <h4 class="title mt-3 mb-4">Upcoming Events</h4>
-                        <p class="text-muted mx-auto para-desc mb-0">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-
             <div class="row align-items-center">
                 <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2 d-flex align-items-stretch">
                     <div class="card team border-0 shadow-lg p-3 mb-5 bg-white rounded overflow-hidden text-center">
