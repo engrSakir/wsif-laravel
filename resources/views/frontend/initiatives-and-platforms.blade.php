@@ -35,7 +35,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-6">
                     <h4 class="title mt-3 mb-4">Impact Investment</h4>
-                    <p class="para-desc text-muted">Investments made with an objective to create positive, measurable social and environmental impact in conjunction with a financial return are referred to as impact investment. Impact investments can be made in both emerging and developed markets and target a return depending on investors’ strategic goals. The growing impact investment market provides fund to address the world’s most pressing challenges in sectors such as sustainable energy, agriculture, microfinance, eCommerce, and affordable and accessible essential services including housing, healthcare, and education.</p>
+                    <p class="para-desc text-muted">
+                        Investments made with an objective to create positive, measurable social and environmental impact in conjunction with a financial return are referred to as impact investment. Impact investments can be made in both emerging and developed markets and target a return depending on investors’ strategic goals. The growing impact investment market provides fund to address the world’s most pressing challenges in sectors such as sustainable energy, agriculture, microfinance, eCommerce, and affordable and accessible essential services including housing, healthcare, and education.</p>
                 </div><!--end col-->
                 <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                     <div class="section-title ms-lg-5">
@@ -55,7 +56,8 @@
                 <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                     <div class="section-title ms-lg-5">
                         <h4 class="title mt-3 mb-4">Digital Entrepreneurship</h4>
-                        <p class="para-desc text-muted">The process of creating a new internet enabled businesses, products, or services, not only through startups, but also through the digital transformation of an existing business function inside a firm or the public sector. It is predicted that 70% of new value creation in the economy over the next decade will be based on digitally enabled platform business models. Entrepreneurs are rapidly adopting a platform approach that can enable multiple players to solve various social issues together and create value for all parties involved. This will facilitate greater economic participation from marginalized populations.</p>
+                        <p class="para-desc text-muted">
+                            The process of creating a new internet enabled businesses, products, or services, not only through startups, but also through the digital transformation of an existing business function inside a firm or the public sector. It is predicted that 70% of new value creation in the economy over the next decade will be based on digitally enabled platform business models. Entrepreneurs are rapidly adopting a platform approach that can enable multiple players to solve various social issues together and create value for all parties involved. This will facilitate greater economic participation from marginalized populations.</p>
                     </div>
                 </div><!--end col-->
             </div>

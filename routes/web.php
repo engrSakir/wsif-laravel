@@ -14,15 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.home');
+    $items = \App\Models\PageItem::where('active', true)->where('show_on_home', true)->orderBy('id', 'desc')->get();
+    return view('frontend.home', compact('items'));
 })->name('home');
+
+Route::get('/page/{slug}', function ($slug) {
+    $page = \App\Models\Page::where('slug', $slug)->first();
+        if(!$page){
+            return back();
+        }
+    return view('frontend.page', compact('page'));
+})->name('page');
 
 Route::get('/about', function () {
     return view('frontend.about');
 })->name('about');
 
 Route::get('/team', function () {
-    return view('frontend.team');
+    $teams = \App\Models\Team::where('active', true)->orderBy('id', 'asc')->get();
+    return view('frontend.team', compact('teams'));
 })->name('team');
 
 Route::get('/event', function () {
