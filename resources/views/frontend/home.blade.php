@@ -185,7 +185,7 @@
             </div><!--end row-->
         </div><!--end container-->
     </section>
-    <!-- /News -->>
+    <!-- /News -->
     <!-- Partners -->
     <section class="py-4 bg-light">
         <div class="row">

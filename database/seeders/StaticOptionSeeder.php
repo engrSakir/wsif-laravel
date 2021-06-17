@@ -29,13 +29,13 @@ class StaticOptionSeeder extends Seeder
         set_static_option('twitter', null);
         set_static_option('linkedin', null);
 
-        set_static_option('email', null);
-        set_static_option('office_name_one', null);
-        set_static_option('office_address_one', null);
-        set_static_option('office_name_two', null);
-        set_static_option('office_address_two', null);
-        set_static_option('office_name_three', null);
-        set_static_option('office_address_three', null);
+        set_static_option('email', 'info@wsif.world');
+        set_static_option('office_name_one', 'Head Quarter');
+        set_static_option('office_address_one', '2680 N. 1st St., Suite 250 San Jose, California 95134, USA');
+        set_static_option('office_name_two', 'Singapore Regional Office');
+        set_static_option('office_address_two', 'Blk 71, Ayer Rajah Crescent, #03-25, Singapore 139951');
+        set_static_option('office_name_three', 'UAE Regional Office');
+        set_static_option('office_address_three', '14th Floor, Office 104 Al Khatem Tower, ADGM Square Al Maryah Island, Abu Dhabi, UAE');
 
         set_static_option('footer_note','The World Social Innovation Forum brings together social changemakers, social innovators, impact investors, leaders in the government, non-profit, and corporate sector, policymakers and thought leaders from various regions of the world.');
         set_static_option('footer_credit','All right reserved by WSIF');
