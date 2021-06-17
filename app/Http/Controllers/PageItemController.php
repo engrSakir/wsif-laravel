@@ -27,7 +27,7 @@ class PageItemController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.page-item.create');
     }
 
     /**
@@ -38,7 +38,39 @@ class PageItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'page' => 'required|exists:pages,id',
+            'title' => 'required|string',
+            'image' => 'nullable|image',
+            'description' => 'nullable|string|max:5000',
+            'status' => 'nullable|boolean',
+            'home_page_visibility' => 'nullable|boolean',
+        ]);
+
+        $pageItem = new PageItem();
+        $pageItem->page_id = $request->page;
+        $pageItem->title = $request->title;
+        $pageItem->description = $request->description;
+        $pageItem->active = $request->status ?? false;
+        $pageItem->show_on_home = $request->home_page_visibility ?? false;
+
+        if($request->hasFile('image')){
+            $image             = $request->file('image');
+            $folder_path       = 'uploads/images/';
+            if (!file_exists($folder_path)) {
+                mkdir($folder_path, 0777, true);
+            }
+            $image_new_name    = Str::random(20).'-'.now()->timestamp.'.'.$image->getClientOriginalExtension();
+            //resize and save to server
+            Image::make($image->getRealPath())->save($folder_path.$image_new_name);
+            $pageItem->image = $folder_path.$image_new_name;
+        }
+        try {
+            $pageItem->save();
+            return back()->withToastSuccess('Successfully updated');
+        }catch(\Exception $exception){
+            return back()->withErrors($exception->getMessage());
+        }
     }
 
     /**

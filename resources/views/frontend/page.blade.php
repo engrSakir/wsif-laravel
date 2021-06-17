@@ -41,7 +41,7 @@
                         <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                             <div class="section-title ms-lg-5">
                                 <div class="position-relative">
-                                    <img src="images/home/one-image.png" class="img-fluid" alt="">
+                                    <img src="{{ $item->image }}" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div><!--end col-->
@@ -50,7 +50,7 @@
                     <div class="row align-items-center desktopContent">
                         <div class="col-lg-5 col-md-6">
                             <div class="position-relative">
-                                <img src="images/home/two-image.png" class="img-fluid" alt="">
+                                <img src="{{ $item->image }}" class="img-fluid" alt="">
                             </div>
                         </div><!--end col-->
                         <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
