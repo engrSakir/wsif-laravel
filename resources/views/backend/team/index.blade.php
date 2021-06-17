@@ -9,7 +9,22 @@
 
 @section('content')
     <div class="col-xl-9 col-lg-8 col-md-7 mt-4 mt-sm-0">
-        <h5 class="mb-0">Team</h5>
+        <div class="row">
+            <div class="col-xl-8 col-lg-6">
+                <h5 class="mb-0">Team List</h5>
+            </div><!--end col-->
+            <div class="col-xl-4 col-lg-6 mt-4 mt-lg-0">
+                <div class="justify-content-md-end">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-sm-12 col-md-auto mt-4 mt-sm-0">
+                            <div class="d-grid">
+                                <a href="{{ route('team.create') }}" class="btn btn-primary">+ Add New One</a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
         <div class="row">
             <div class="col-12 mt-4 pt-2">
                 <div class="table-responsive shadow rounded">
