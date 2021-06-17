@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@push('title') | About @endpush
+@push('title') | Team @endpush
 @push('style')
 
 @endpush
