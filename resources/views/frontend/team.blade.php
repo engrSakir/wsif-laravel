@@ -42,7 +42,7 @@
                             </ul>
                         </div>
                         <div class="card-body content text-center">
-                            <a href="#" class="title text-dark h5 d-block mb-0">
+                            <a href="{{ route('teamDetails', $team->slug) }}" class="title text-dark h5 d-block mb-0">
                                {{ $team->name }}
                             </a>
                             <small class="text-muted speciality">

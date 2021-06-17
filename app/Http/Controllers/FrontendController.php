@@ -36,6 +36,17 @@ class FrontendController extends Controller
         return view('frontend.team', compact('teams'));
     }
 
+    public function teamDetails($slug)
+    {
+        $team = \App\Models\Team::where('active', true)->where('slug', $slug)->first();
+        if(!$team){
+            return back()->withErrors('Not found');
+        }
+        $page_meta_description = $team->name . ' '. $team->designation;
+        $page_meta_image = $team->image;
+        return view('frontend.team-details', compact('team', 'page_meta_description', 'page_meta_image'));
+    }
+
     public function event()
     {
         return view('frontend.event');
