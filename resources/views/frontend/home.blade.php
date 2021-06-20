@@ -188,7 +188,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    @if($partners->count() > 0)<h4 class="title mb-4">Valuable products</h4> @endif
+                    @if($partners->count() > 0)<h4 class="title mb-4">Valuable Partners</h4> @endif
                 </div>
             </div><!--end col-->
         </div><!--end row-->
