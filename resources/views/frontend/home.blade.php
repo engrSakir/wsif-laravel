@@ -12,15 +12,12 @@
         /* Smartphone Portrait and Landscape */
 
         @media only screen
-
         and (min-device-width: 320px)
-
         and (max-device-width: 480px) {
             .mobileContent {
                 display: inline;
             }
         }
-
     </style>
 @endpush
 @push('script')
@@ -79,34 +76,34 @@
     </section><!--end section-->
     <!-- /Hero -->
     <!-- Number -->
-    <section class="section" style="background-color: rgb(150, 187, 124);">
+    <section class="py-4 bg-primary" style="background-color: rgb(150, 187, 124);">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-12">
-                    <div class="features-absolute bg-white shadow rounded overflow-hidden card-group text-center">
-                        <div class="card border-0 bg-light p-4">
-                            <i class="fas fa-chart-line text-primary h2 mb-0"></i>
-                            <h5 class="mt-1">Impact Investment</h5>
-                        </div>
-                        <div class="card border-0 p-4">
-                            <i class="fas fa-user-tie text-primary h2 mb-0"></i>
-                            <h5 class="mt-1">Digital Entrepreneurship</h5>
-                        </div>
-                        <div class="card border-0 bg-light p-4">
-                            <i class="fas fa-heartbeat text-primary h2 mb-0"></i>
-                            <h5 class="mt-1">Digital Healthcare</h5>
-                        </div>
-                        <div class="card border-0 p-4">
-                            <i class="fas fa-user-graduate text-primary h2 mb-0"></i>
-                            <h5 class="mt-1">Digital Education</h5>
-                        </div>
-                        <div class="card border-0 p-4">
-                            <i class="fas fa-city text-primary h2 mb-0"></i>
-                            <h5 class="mt-1">Smart City Initiatives</h5>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                   <i class="fas fa-chart-line text-white h2 mb-0"></i>
+                   <h5 class="mt-1 text-white">Impact <br> Investment</h5>
                 </div><!--end col-->
-            </div>
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                   <i class="fas fa-user-tie text-white h2 mb-0"></i>
+                   <h5 class="mt-1 text-white">Digital <br> Entrepreneurship</h5>
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                    <i class="fas fa-heartbeat text-white h2 mb-0"></i>
+                   <h5 class="mt-1 text-white">Digital <br> Healthcare</h5>
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                    <i class="fas fa-user-graduate text-white h2 mb-0"></i>
+                   <h5 class="mt-1 text-white">Digital <br> Education</h5>
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4">
+                    <i class="fas fa-city text-white h2 mb-0"></i>
+                   <h5 class="mt-1 text-white">Smart <br> City Initiatives</h5>
+                </div><!--end col-->
+            </div><!--end row-->
         </div><!--end container-->
     </section>
     <!-- /Number -->
