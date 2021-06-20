@@ -42,6 +42,7 @@ class TeamController extends Controller
         $request->validate([
             'name' => 'required|string|unique:teams,name',
             'image' => 'nullable|image',
+            'flag' => 'nullable|exists:flags,id',
             'linkedin' => 'nullable|string',
             'designation' => 'nullable|string|max:200',
             'description' => 'nullable|string|max:5000',
@@ -51,6 +52,7 @@ class TeamController extends Controller
         $team = new Team();
         $team->slug = Str::slug($request->name, '-');
         $team->name = $request->name;
+        $team->flag_id = $request->flag;
         $team->linkedin = $request->linkedin;
         $team->designation = $request->designation;
         $team->description = $request->description;
@@ -109,6 +111,7 @@ class TeamController extends Controller
         $request->validate([
            'name' => 'required|string|unique:teams,name,'.$team->id,
            'image' => 'nullable|image',
+            'flag' => 'nullable|exists:flags,id',
            'linkedin' => 'nullable|string',
            'designation' => 'nullable|string|max:200',
            'description' => 'nullable|string|max:5000',
@@ -117,6 +120,7 @@ class TeamController extends Controller
 
         $team->slug = Str::slug($request->name, '-');
         $team->name = $request->name;
+        $team->flag_id = $request->flag;
         $team->linkedin = $request->linkedin;
         $team->designation = $request->designation;
         $team->description = $request->description;

@@ -17,6 +17,7 @@ class CreateTeamsTable extends Migration
             $table->id();
             $table->boolean('active')->default(true);
             $table->string('name');
+            $table->foreignId('flag_id')->nullable();
             $table->string('slug');
             $table->string('image')->nullable();
             $table->longText('description')->nullable();

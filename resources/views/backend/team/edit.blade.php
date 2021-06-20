@@ -34,7 +34,7 @@
                 ['para', ['ul', 'ol', 'paragraph']],
                 ['table', ['']],
                 ['insert', ['link', '', '']],
-                ['view', ['', '', '']]
+                ['view', ['codeview', '', '']]
             ]
         });
     </script>
@@ -77,6 +77,23 @@
                                         @enderror
                                     </div>
                                 </div><!--end col-->
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        @foreach(\App\Models\Flag::all() as $flag)
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="flag" id="flag-{{ $loop->iteration }}" value="{{ $flag->id }}" @if($team->flag_id == $flag->id) checked @endif>
+                                                <label class="form-check-label" for="flag-{{ $loop->iteration }}">
+                                                    <img id="showFlag" src="{{ $flag->url }}" />
+                                                </label>
+                                            </div>
+                                        @endforeach
+                                        @error('flag')
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">LinkedIn</label>

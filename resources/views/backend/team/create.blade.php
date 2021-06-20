@@ -1,6 +1,7 @@
 @extends('layouts.backend.app')
 @push('title') | Add @endpush
 @push('style')
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 @endpush
 @push('summernote')
@@ -34,10 +35,12 @@
                 ['para', ['ul', 'ol', 'paragraph']],
                 ['table', ['']],
                 ['insert', ['link', '', '']],
-                ['view', ['', '', '']]
+                ['view', ['codeview', '', '']]
             ]
         });
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 @endpush
 
 @section('content')
@@ -48,7 +51,6 @@
                     <div class="p-4 border-bottom">
                         <h5 class="mb-0"> Add new team </h5>
                     </div>
-
                     <div class="p-4">
                         <form method="post" action="{{ route('team.store') }}" enctype="multipart/form-data">
                             @csrf
@@ -63,7 +65,7 @@
                                         </div>
                                         @enderror
                                     </div>
-                                </div><!--end col-->
+                                </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Image <span class="text-danger">*</span></label>
@@ -74,7 +76,24 @@
                                         </div>
                                         @enderror
                                     </div>
-                                </div><!--end col-->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        @foreach(\App\Models\Flag::all() as $flag)
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="flag" id="flag-{{ $loop->iteration }}" value="{{ $flag->id }}" @if(old('flag') == $flag->id) checked @endif>
+                                            <label class="form-check-label" for="flag-{{ $loop->iteration }}">
+                                                <img id="showFlag" src="{{ $flag->url }}" />
+                                            </label>
+                                        </div>
+                                        @endforeach
+                                        @error('flag')
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">LinkedIn</label>

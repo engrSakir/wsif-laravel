@@ -43,7 +43,7 @@
                         </div>
                         <div class="card-body content text-center">
                             <a href="{{ route('teamDetails', $team->slug) }}" class="title text-dark h5 d-block mb-0">
-                               {{ $team->name }}
+                               {{ $team->name }} &nbsp; <img src="{{ $team->flag->url ?? '#' }}" alt="">
                             </a>
                             <small class="text-muted speciality">
                                 {!! $team->designation !!}

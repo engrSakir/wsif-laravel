@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Team extends Model
+class Flag extends Model
 {
     use HasFactory;
 
-    public function flag(){
-        return $this->belongsTo(Flag::class, 'flag_id', 'id');
+    public function teams(){
+        return $this->hasMany(Team::class, 'flag_id', 'id');
     }
 }
