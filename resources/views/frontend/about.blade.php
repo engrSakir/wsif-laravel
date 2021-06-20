@@ -16,12 +16,6 @@
                 <div class="col-12">
                     <div class="section-title text-center">
                         <h3 class="sub-title mb-4 text-white">About us</h3>
-                        <nav aria-label="breadcrumb" class="d-inline-block">
-                            <ul class="breadcrumb bg-light rounded mb-0 py-1">
-                                <li class="breadcrumb-item"><a href="{{ route('home') }}">HOME</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">ABOUT</li>
-                            </ul>
-                        </nav>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
