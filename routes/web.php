@@ -21,6 +21,7 @@ Route::get('/team/{slug}', [\App\Http\Controllers\FrontendController::class, 'te
 Route::get('/event', [\App\Http\Controllers\FrontendController::class, 'event'])->name('event');
 Route::get('/news', [\App\Http\Controllers\FrontendController::class, 'news'])->name('news');
 Route::get('/contact', [\App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
+Route::post('/contact', [\App\Http\Controllers\FrontendController::class, 'storeContact'])->name('storeContact');
 
 require __DIR__.'/auth.php';
 require __DIR__.'/admin.php';

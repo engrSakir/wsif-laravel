@@ -34,7 +34,8 @@
                 <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                     <div class="custom-form rounded shadow p-4">
                         <h5 class="mb-4">Get in touch!</h5>
-                        <form method="" name="myForm" onsubmit="">
+                        <form method="post" action="{{ route('storeContact') }}" name="myForm" onsubmit="">
+                            @csrf
                             <p id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div class="row">
@@ -42,6 +43,11 @@
                                     <div class="mb-3">
                                         <label class="form-label">Your Name <span class="text-danger">*</span></label>
                                         <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name :">
+                                        @error('name')
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -49,6 +55,11 @@
                                     <div class="mb-3">
                                         <label class="form-label">Your Email <span class="text-danger">*</span></label>
                                         <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email :">
+                                        @error('email')
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div><!--end col-->
 
@@ -56,6 +67,11 @@
                                     <div class="mb-3">
                                         <label class="form-label">Subject</label>
                                         <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject :">
+                                        @error('subject')
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div><!--end col-->
 
@@ -63,6 +79,11 @@
                                     <div class="mb-3">
                                         <label class="form-label">Comments <span class="text-danger">*</span></label>
                                         <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message :"></textarea>
+                                        @error('comments')
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>

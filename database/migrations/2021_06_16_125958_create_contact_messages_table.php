@@ -15,6 +15,11 @@ class CreateContactMessagesTable extends Migration
     {
         Schema::create('contact_messages', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email')->nullable();
+            $table->string('subject')->nullable();
+            $table->string('comments');
+            $table->boolean('process_completed')->default(false);
             $table->timestamps();
         });
     }

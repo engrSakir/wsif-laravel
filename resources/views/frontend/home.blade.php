@@ -44,7 +44,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="heading-title">
-                                <p class="para-desc text-white-50 mb-0">
+                                <p class="para-desc text-white-50 mb-0 text-justify">
                                     {!! get_static_option('home_banner_description') !!}
                                 </p>
                             </div>

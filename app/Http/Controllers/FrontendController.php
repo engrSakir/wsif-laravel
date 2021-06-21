@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactMessage;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -61,4 +62,32 @@ class FrontendController extends Controller
     {
         return view('frontend.contact');
     }
+
+    public function storeContact(Request $request)
+    {
+        $request->validate([
+           'name' => 'required|string',
+           'email' => 'required|email',
+           'subject' => 'nullable|string',
+           'comments' => 'required|string',
+        ]);
+
+        $contact_message =new ContactMessage();
+        $contact_message->name = $request->name;
+        $contact_message->email = $request->email;
+        $contact_message->subject = $request->subject;
+        $contact_message->comments = $request->comments;
+        try {
+            $contact_message->save();
+            return  back()->withSuccess('Thank you for message us.');
+        }catch (\Exception $exception){
+            if(config('app.debug') == true){
+                return  back()->withErrors($exception->getMessage());
+            }else{
+                return  back()->withErrors('Something went wrong.');
+            }
+        }
+
+    }
+
 }
