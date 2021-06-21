@@ -45,7 +45,7 @@
                                 <a href="#" class="text-primary">
                                     <div class="d-flex align-items-center">
                                         <img src="{{ asset($team->image) }}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                        <span class="ms-2">{{ $team->name }}</span>
+                                        <span class="ms-2">{{ $team->name }}</span> &nbsp; <img src="{{ $team->flag->url ?? '' }}" alt="">
                                     </div>
                                 </a>
                             </td>
