@@ -44,8 +44,8 @@ class TeamController extends Controller
             'image' => 'nullable|image',
             'flag' => 'nullable|exists:flags,id',
             'linkedin' => 'nullable|string',
-            'designation' => 'nullable|string|max:200',
-            'description' => 'nullable|string|max:5000',
+            'designation' => 'nullable|string|max:1000',
+            'description' => 'nullable|string|max:10000',
             'status' => 'nullable|boolean',
         ]);
 
@@ -113,8 +113,8 @@ class TeamController extends Controller
            'image' => 'nullable|image',
             'flag' => 'nullable|exists:flags,id',
            'linkedin' => 'nullable|string',
-           'designation' => 'nullable|string|max:200',
-           'description' => 'nullable|string|max:5000',
+           'designation' => 'nullable|string|max:1000',
+           'description' => 'nullable|string|max:10000',
            'status' => 'nullable|boolean',
         ]);
 

@@ -18,6 +18,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin/', 'as' => ''], funct
     Route::get('basic-info', [\App\Http\Controllers\StaticOptionController::class, 'getBasicInfo'])->name('basic.edit');
     Route::post('basic-info', [\App\Http\Controllers\StaticOptionController::class, 'updateBasicInfo'])->name('basic.update');
 
+    Route::resource('contactMessage', \App\Http\Controllers\ContactMessageController::class);
     Route::resource('team', \App\Http\Controllers\TeamController::class);
     Route::resource('page', \App\Http\Controllers\PageController::class);
     Route::resource('pageItem', \App\Http\Controllers\PageItemController::class);

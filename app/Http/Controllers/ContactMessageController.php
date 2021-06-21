@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ContactMessageController extends Controller
 {
@@ -14,7 +15,8 @@ class ContactMessageController extends Controller
      */
     public function index()
     {
-        //
+        $messages = ContactMessage::orderBy('id', 'desc')->get();
+        return view('backend.contact-message.index', compact('messages'));
     }
 
     /**
@@ -46,7 +48,7 @@ class ContactMessageController extends Controller
      */
     public function show(ContactMessage $contactMessage)
     {
-        //
+        return view('backend.contact-message.show', compact('contactMessage'));
     }
 
     /**
@@ -80,6 +82,17 @@ class ContactMessageController extends Controller
      */
     public function destroy(ContactMessage $contactMessage)
     {
-        //
+        try {
+            $contactMessage->delete();
+            return response()->json([
+                'type' => 'success',
+                'message' => ''
+            ]);
+        }catch (\Exception$exception){
+            return response()->json([
+                'type' => 'error',
+                'message' => ''
+            ]);
+        }
     }
 }

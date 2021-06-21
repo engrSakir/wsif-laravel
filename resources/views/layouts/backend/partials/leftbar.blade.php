@@ -10,6 +10,7 @@
         </div>
         <ul class="list-unstyled sidebar-nav mb-0">
             <li class="navbar-item"><a href="{{ route('dashboard') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Dashboard</a></li>
+            <li class="navbar-item"><a href="{{ route('contactMessage.index') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Messages</a></li>
             <li class="navbar-item"><a href="{{ route('home.edit') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Home</a></li>
             <li class="navbar-item"><a href="{{ route('about.edit') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> About</a></li>
             <li class="navbar-item"><a href="{{ route('team.index') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Team</a></li>
