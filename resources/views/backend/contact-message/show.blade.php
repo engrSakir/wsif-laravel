@@ -42,25 +42,25 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Name </label>
-                                        <input name="name" id="name" type="text" class="form-control" placeholder="Full Name" readonly value="{{ $contactMessage->name }}">
+                                        <input name="name" id="name" type="text" class="form-control bg-success text-white" placeholder="Full Name" readonly value="{{ $contactMessage->name }}">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Email</label>
-                                        <input name="email" id="email" class="form-control" placeholder="Email address" readonly value="{{ $contactMessage->email }}">
+                                        <input name="email" id="email" class="form-control bg-success text-white" placeholder="Email address" readonly value="{{ $contactMessage->email }}">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Subject</label>
-                                        <input name="subject" id="subject" class="form-control" placeholder="Subject" readonly value="{{ $contactMessage->subject }}">
+                                        <input name="subject" id="subject" class="form-control bg-success text-white" placeholder="Subject" readonly value="{{ $contactMessage->subject }}">
                                     </div>
                                 </div><!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Comments</label>
-                                        <textarea name="comments" id="comments" rows="4" class="form-control" readonly>{!! $contactMessage->comments !!}</textarea>
+                                        <textarea name="comments" id="comments" rows="4" class="form-control bg-success text-white" readonly>{!! $contactMessage->comments !!}</textarea>
                                     </div>
                                 </div>
                                 <hr>

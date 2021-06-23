@@ -46,4 +46,8 @@ if (!function_exists('random_code')){
     function pages(){
         return \App\Models\Page::where('active', true)->select('id', 'name', 'slug')->get();
     }
+
+    function total_process_incomplete_messages(){
+        return \App\Models\ContactMessage::where('process_completed', false)->count();
+    }
 }
