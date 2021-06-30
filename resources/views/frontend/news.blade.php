@@ -26,32 +26,21 @@
     <section class="section">
         <div class="container mt-60">
             <div class="row">
+                @foreach($all_news as $news)
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 d-flex align-items-stretch">
                     <div class="card blog blog-primary border-0 shadow rounded overflow-hidden">
-                        <img src="images/news/1.jpg" class="img-fluid" alt="">
+                        <img src="{{ asset($news->image) }}" class="img-fluid" alt="">
                         <div class="card-body p-4">
                             <ul class="list-unstyled mb-2">
-                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>09th May</li>
+                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>{{ $news->created_at->format('d-M-Y') }}</li>
                             </ul>
                             <a href="#" class="text-dark title h5">
-                                WSIF Partners with Startup World Cup and Startup Hub Nepal to Support Impact Startups Aligning with SDGs
+                            {{ $news->title }}
                             </a>
                         </div>
                     </div>
-                </div><!--end col-->
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 d-flex align-items-stretch">
-                    <div class="card blog blog-primary border-0 shadow rounded overflow-hidden">
-                        <img src="images/news/2.jpg" class="img-fluid" alt="">
-                        <div class="card-body p-4">
-                            <ul class="list-unstyled mb-2">
-                                <li class="list-inline-item text-muted small me-3"><i class="uil uil-calendar-alt text-dark h6 me-1"></i>10th April</li>
-                            </ul>
-                            <a href="#" class="text-dark title h5">
-                                WSIF Partners with Bangladesh’s ICT Division to Launch Plasma Network
-                            </a>
-                        </div>
-                    </div>
-                </div><!--end col-->
+                </div>
+                @endforeach
             </div><!--end row-->
         </div><!--end container-->
     </section>

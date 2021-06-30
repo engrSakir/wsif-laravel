@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -55,7 +56,8 @@ class FrontendController extends Controller
 
     public function news()
     {
-        return view('frontend.news');
+        $all_news = News::where('published', true)->orderBy('id', 'desc')->get();
+        return view('frontend.news', compact('all_news'));
     }
 
     public function contact()

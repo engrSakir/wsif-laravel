@@ -14,6 +14,7 @@
             <li class="navbar-item"><a href="{{ route('home.edit') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Home</a></li>
             <li class="navbar-item"><a href="{{ route('about.edit') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> About</a></li>
             <li class="navbar-item"><a href="{{ route('team.index') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Team</a></li>
+            <li class="navbar-item"><a href="{{ route('news.index') }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> News</a></li>
             @foreach(pages() as $page)
                 <li class="navbar-item"><a href="{{ route('page.edit', $page) }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> {{ $page->name }}</a></li>
                 <li class="navbar-item"><a href="{{ route('page.show', $page) }}" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Details of {{ $page->name }}</a></li>
